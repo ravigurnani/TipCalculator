@@ -1,0 +1,74 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <TextView
+        android:id="@+id/tvFinalTip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="70dp"
+        android:text="@string/tvTipAmt"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <EditText
+        android:id="@+id/etBillAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="48dp"
+        android:ems="10"
+        android:hint="@string/TipInput"
+        android:inputType="numberDecimal" >
+
+        <requestFocus />
+    </EditText>
+
+    <Button
+        android:id="@+id/btn10pc"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etBillAmount"
+        android:layout_marginTop="100dp"
+        android:layout_toLeftOf="@+id/tvFinalTip"
+        android:onClick="@string/Tip10pc"
+        android:text="@string/TenPcTip"/>
+
+    <TextView
+        android:id="@+id/tvBillAmt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="14dp"
+        android:text="@string/tvBillAmt"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <Button
+        android:id="@+id/btn20pc"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btn30pc"
+        android:layout_alignBottom="@+id/btn30pc"
+        android:layout_centerHorizontal="true"
+        android:onClick="@string/Tip20pc"
+        android:text="@string/TwentyPcTip" />
+
+    <Button
+        android:id="@+id/btn30pc"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btn10pc"
+        android:layout_alignBottom="@+id/btn10pc"
+        android:layout_toRightOf="@+id/tvFinalTip"
+        android:onClick="@string/Tip30pc"
+        android:text="@string/ThirtyPcTip" />
+
+</RelativeLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">TipCalculator</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="TipInput">Whatz your bill amt?</string>
+    <string name="TenPcTip">10%</string>
+    <string name="TwentyPcTip">20%</string>
+    <string name="ThirtyPcTip">30%</string>
+    <string name="Tip10pc">Tip10pc</string>
+    <string name="tvTipAmt">Tip Amount</string>
+    <string name="tvBillAmt">Bill Amount</string>
+    <string name="Tip20pc">Tip20pc</string>
+    <string name="Tip30pc">Tip30pc</string>
+
+</resources>
